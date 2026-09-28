@@ -1,0 +1,35 @@
+# ------------------------------------------
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET
+bin/
+obj/
+
+# React / Node.js
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+
+# File nén / Backup
+*.zip
+*.rar
+*.7z
+
+# File tạm
+*.tmp
+*.temp
+# ------------------------------------------

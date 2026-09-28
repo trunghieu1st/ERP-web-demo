@@ -1,0 +1,742 @@
+
+.production-line-page {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.production-line-top {
+  flex: 0 0 auto;
+
+  padding: 24px 24px 0 24px;
+
+  background: #f3f4f6;
+}
+
+.production-line-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 20px;
+}
+
+.production-line-header h1 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.production-line-subtitle {
+  margin-top: 6px;
+
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.production-line-tabs {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 4px;
+
+  margin-top: 20px;
+
+  border-bottom: 1px solid #d1d5db;
+}
+
+.production-line-tab {
+  border: none;
+  border-bottom: 2px solid transparent;
+
+  background: transparent;
+
+  padding: 11px 18px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #6b7280;
+
+  cursor: pointer;
+}
+
+.production-line-tab:hover {
+  color: #111827;
+}
+
+.production-line-tab.active {
+  color: #2563eb;
+
+  border-bottom-color: #2563eb;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.production-line-content {
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 20px 24px 24px 24px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.production-line-filter {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+.production-line-filter label {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.production-line-filter select {
+  min-width: 300px;
+
+  height: 38px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+
+  color: #111827;
+
+  outline: none;
+}
+
+.production-line-filter select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================================================
+   LIST CARD
+========================================================= */
+
+.production-line-list-card {
+  flex: 1;
+
+  min-height: 0;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   LIST HEADER
+========================================================= */
+
+.list-header {
+  flex: 0 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 16px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  background: #ffffff;
+}
+
+.list-title {
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.list-count {
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.table-wrapper {
+  flex: 1;
+
+  min-height: 0;
+
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* =========================================================
+   LIST TABLE
+========================================================= */
+
+.production-line-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+}
+
+.production-line-table th {
+  position: sticky;
+  top: 0;
+
+  z-index: 2;
+
+  padding: 11px 12px;
+
+  background: #fafafa;
+
+  border-bottom: 1px solid #d1d5db;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #374151;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+.production-line-table td {
+  padding: 11px 12px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  font-size: 14px;
+
+  color: #374151;
+
+  white-space: nowrap;
+}
+
+.production-line-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.production-line-table th:first-child,
+.production-line-table td:first-child {
+  width: 60px;
+  text-align: center;
+}
+
+.production-line-table th:nth-child(5),
+.production-line-table td:nth-child(5) {
+  width: 80px;
+  text-align: center;
+}
+
+.production-line-table th:nth-child(6),
+.production-line-table td:nth-child(6) {
+  width: 140px;
+}
+
+.production-line-table th:last-child,
+.production-line-table td:last-child {
+  width: 150px;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 9px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.status-badge.active {
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+.status-badge.inactive {
+  background: #f3f4f6;
+
+  color: #6b7280;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-primary,
+.btn-secondary {
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.btn-edit {
+  padding: 6px 12px;
+
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #374151;
+}
+
+.btn-edit:hover {
+  background: #f3f4f6;
+}
+
+.btn-delete {
+  padding: 6px 12px;
+
+  border: 1px solid #fecaca;
+
+  background: #ffffff;
+
+  color: #dc2626;
+}
+
+.btn-delete:hover {
+  background: #fef2f2;
+}
+
+.btn-primary {
+  padding: 9px 16px;
+
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  padding: 9px 16px;
+
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background: #f3f4f6;
+}
+
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-edit:disabled,
+.btn-delete:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   LOADING / EMPTY
+========================================================= */
+
+.loading,
+.empty {
+  flex: 1;
+
+  min-height: 200px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.production-line-form-card {
+  flex: 1;
+
+  min-height: 0;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 24px;
+}
+
+.form-title {
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+/* =========================================================
+   FORM BODY
+========================================================= */
+
+.production-line-form-body {
+  width: 100%;
+}
+
+/* =========================================================
+   FORM TABLE - ADD MULTIPLE
+========================================================= */
+
+.production-line-form-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  margin-bottom: 20px;
+}
+
+.production-line-form-table {
+  width: 100%;
+
+  min-width: 700px;
+
+  border-collapse: collapse;
+}
+
+.production-line-form-table th {
+  padding: 10px 12px;
+
+  background: #f9fafb;
+
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #d1d5db;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #374151;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+.production-line-form-table th:first-child {
+  width: 60px;
+
+  text-align: center;
+}
+
+.production-line-form-table th:nth-child(4) {
+  width: 110px;
+
+  text-align: center;
+}
+
+.production-line-form-table th:last-child {
+  width: 80px;
+}
+
+.production-line-form-table td {
+  padding: 8px 10px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  font-size: 14px;
+
+  color: #374151;
+}
+
+.production-line-form-table input {
+  width: 100%;
+
+  height: 38px;
+
+  box-sizing: border-box;
+
+  padding: 0 10px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+
+  color: #111827;
+
+  outline: none;
+}
+
+.production-line-form-table input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.production-line-form-table .row-number {
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.production-line-form-table .sort-order-cell {
+  width: 110px;
+}
+
+.production-line-form-table .remove-cell {
+  width: 80px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.production-line-form-actions {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.production-line-form-action-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* =========================================================
+   EDIT FORM
+========================================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+
+  max-width: 1000px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  height: 40px;
+
+  box-sizing: border-box;
+
+  padding: 0 11px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+
+  color: #111827;
+
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.form-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 28px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+  .production-line-top {
+    padding: 18px 16px 0 16px;
+  }
+
+  .production-line-content {
+    padding: 16px;
+  }
+
+  .production-line-header {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .production-line-header .btn-primary {
+    align-self: flex-start;
+  }
+
+  .production-line-filter {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .production-line-filter select {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  .production-line-tabs {
+    overflow-x: auto;
+  }
+
+  .production-line-tab {
+    white-space: nowrap;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .production-line-form-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .production-line-form-action-right {
+    justify-content: flex-end;
+  }
+}
